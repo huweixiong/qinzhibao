@@ -1,0 +1,172 @@
+@charset"utf-8";
+
+*{
+     padding: 0;
+     margin: 0
+ }
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*body{    //移动端字体样式
+	font-family:"PingFang SC", "Lantinghei SC", "Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+	font-size: 14px;
+	}*/
+
+body {          //京东PC端字体样式
+    -webkit-font-smoothing: antialiased; //抗锯齿渲染
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\\5b8b体", sans-serif;
+    color: #666;
+  }
+
+*,html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,a,img,
+button,textarea,iframe,table,th,td,legend,input,fieldset,iframe,footer,tr
+{margin: 0px;padding: 0px;vertical-align:baseline;outline:none;box-sizing:border-box;color: #333;
+font-style: normal;}
+
+table,th,td,tr,thead{border-collapse:collapse;}
+
+input{border:none;margin-bottom: 0px;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #ccc; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #ccc; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: #ccc; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #ccc; }
+#clear_input{margin: 0;padding: 0;border:none;height: 100%;line-height: 100%;}
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary { display: block;}
+audio,canvas,progress,video { 
+ display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+ul,li,ol{list-style: none;}
+
+a,img{
+  border: 0 none;
+}
+a{
+  text-decoration: none;
+  background-color: transparent;
+  color: #333;
+}
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;}
+
+i,em{font-style:normal;}
+
+
+.none{display: none;}
+.block{display: block;}
+.inline-block{display: inline-block;}
+.transparent{opacity: 0;}
+
+
+/*浮动常用样式*/
+.fl{float:left;display: block;}
+.fr{float:right;display: block;}
+
+
+/*溢出隐藏*/
+.overfl{overflow: hidden;zoom:1;}
+
+
+/*盒子模型常用样-------在 移动端 不存在兼容性/ PC端 可能某些会有兼容性*/
+.dis_flex{display: -webkit-box;display: -webkit-flex;display: flex;width: 100%;}
+.dis_flex.align{align-items: center;}
+.flex1{-webkit-box-flex:1;-webkit-flex:1;flex:1;}
+.flex2{-webkit-box-flex:2;-webkit-flex:2;flex:2;}
+
+
+/*文字说明几行显示隐藏*/
+.overflowline3{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+.overflowline2{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.overflowline1{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:1;overflow: hidden;}
+
+
+
+/*清除浮动常用样式*/
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+.clear{display: table;}
+
+
+/*文字居 左、中、右 常用样式*/
+.tl{text-align: left;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+
+
+/*字体加粗*/
+.fb{font-weight: 600;}
+
+
+/*定位*/
+.pre{position: relative;}
+.pab{position: absolute;}
+
+
+/*页面边框线*/
+.borl{border-left:1px solid #eee;}/*随项目改变颜色*/
+.bord{border-right:1px solid #eee;}/*随项目改变颜色*/
+.bort{border-top:1px solid #eee;}/*随项目改变颜色*/
+.borb{border-bottom:1px solid #eee;}/*随项目改变颜色*/
+
+
+/*字体颜色*/
+.c33{color: #333;}/*随项目改变颜色*/
+.c66{color: #666;}/*随项目改变颜色*/
+.c99{color: #999;}/*随项目改变颜色*/
+.cred{color: #e82117;}/*随项目改变颜色*/
+.cbai{color:#fff;}
+.cmain{color:#ff8b23;}/*随项目改变颜色*/
+
+
+/*背景颜色*/
+.bgbai{background: #fff;}
+.bgmain{background:#ff8b23;}
+
+
+/*宽度百分比*/
+.w10{width:10%;overflow: hidden;zoom:1;}
+.w15{width:15%;overflow: hidden;zoom:1;}
+.w16{width:16.6%;overflow: hidden;zoom:1;}
+.w20{width:20%;overflow: hidden;zoom:1;}
+.w225{width:22.5%;overflow: hidden;zoom:1;}
+.w25{width:25%;overflow: hidden;zoom:1;}
+.w30{width: 30%;overflow: hidden;zoom:1;}
+.w33{width: 33.3%;overflow: hidden;zoom:1;}
+.w35{width: 35%;overflow: hidden;zoom:1;}
+.w40{width: 40%;overflow: hidden;zoom:1;}
+.w49{width: 49%;overflow: hidden;zoom:1;}
+.w50{width: 50%;overflow: hidden;zoom:1;}
+.w60{width: 60%;overflow: hidden;zoom:1;}
+.w65{width: 65%;overflow: hidden;zoom:1;}
+.w20{width: 20%;overflow: hidden;zoom:1;}
+.w70{width: 70%;overflow: hidden;zoom:1;}
+.w75{width: 75%;overflow: hidden;zoom:1;}
+.w80{width: 80%;overflow: hidden;zoom:1;}
+.w90{width: 90%;overflow: hidden;zoom:1;}
+
+
+/*鼠标移动——按钮——手型*/
+.btn:hover{
+  cursor:pointer
+}
+
